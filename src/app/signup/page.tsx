@@ -36,6 +36,7 @@ export default function Signup() {
       <div className="pt-24 px-6 flex flex-col relative z-10 pb-6">
         <div className="text-center text-white">
           <h1 className="text-5xl font-extrabold tracking-tight">VendTrack</h1>
+          <p className="text-white/60 text-xs font-semibold mt-3 uppercase tracking-[0.3em]" style={{ fontFamily: "'DM Sans', sans-serif" }}>by Vijay Dhyani</p>
         </div>
       </div>
 

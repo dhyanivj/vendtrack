@@ -30,6 +30,7 @@ export default function Login() {
       <div className="pt-24 px-6 flex flex-col flex-1 relative z-10">
         <div className="text-center text-white">
           <h1 className="text-6xl font-extrabold tracking-tight">VendTrack</h1>
+          <p className="text-white/60 text-xs font-semibold mt-3 uppercase tracking-[0.3em]" style={{ fontFamily: "'DM Sans', sans-serif" }}>by Vijay Dhyani</p>
         </div>
       </div>
 
