@@ -23,7 +23,7 @@ export default function TopNavBar() {
           <span className="material-symbols-outlined" data-icon="settings">settings</span>
         </Link>
       </div>
-      <div className="bg-[#eeeeee] dark:bg-gray-800 h-[1px] w-full"></div>
+      <div className="h-[1px] w-full"></div>
     </header>
   );
 }

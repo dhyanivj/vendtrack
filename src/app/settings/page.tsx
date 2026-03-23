@@ -77,60 +77,10 @@ export default function Settings() {
   };
 
   return (
-    <main className="pt-24 px-6 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 pb-32">
-      {/* Left Column: The Vending Card */}
-      <section className="md:col-span-5 lg:col-span-4">
-        <div className="sticky top-28">
-          <h2 className="font-headline font-extrabold text-3xl mb-8 tracking-tight">Account</h2>
-          
-          {/* Digital Vending Card */}
-          <div className="relative w-full aspect-[1.586/1] rounded-xl bg-gradient-to-br from-primary to-primary-container p-8 text-white shadow-2xl overflow-hidden group">
-            <div className="absolute inset-0 opacity-20 pointer-events-none">
-              <svg className="w-full h-full" viewBox="0 0 100 100">
-                <circle cx="90" cy="10" fill="currentColor" r="40"></circle>
-                <circle cx="10" cy="90" fill="currentColor" r="30"></circle>
-              </svg>
-            </div>
-            <div className="relative h-full flex flex-col justify-between">
-              <div className="flex justify-between items-start">
-                <div className="flex flex-col">
-                  <span className="font-label text-[10px] uppercase tracking-widest opacity-80">Card Member</span>
-                  <span className="font-bold text-lg">{user.name}</span>
-                </div>
-                <span className="material-symbols-outlined text-3xl" data-icon="contactless">contactless</span>
-              </div>
-              <div className="flex flex-col gap-1">
-                <span className="font-label text-[10px] uppercase tracking-widest opacity-80">Card Number</span>
-                <span className="font-headline text-2xl tracking-[0.2em] font-medium">•••• •••• •••• {user.cardLast4}</span>
-              </div>
-              <div className="flex justify-between items-end">
-                <div className="flex gap-6">
-                  <div className="flex flex-col">
-                    <span className="font-label text-[10px] uppercase tracking-widest opacity-80">Status</span>
-                    <span className="font-medium text-sm">Active</span>
-                  </div>
-                </div>
-                <div className="text-2xl font-black italic tracking-tighter">VENDTRACK</div>
-              </div>
-            </div>
-          </div>
+    <main className="pt-24 px-6 max-w-2xl mx-auto pb-32">
+      <h2 className="font-headline font-extrabold text-3xl mb-8 tracking-tight">Settings</h2>
 
-          {/* Quick Stats Bento */}
-          <div className="grid grid-cols-2 gap-4 mt-6">
-            <div className="bg-surface-container-low p-4 rounded-xl">
-              <span className="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant mb-1 block">Phone ID</span>
-              <span className="text-xl font-bold">{user.phone}</span>
-            </div>
-            <div className="bg-surface-container-low p-4 rounded-xl">
-              <span className="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant mb-1 block">Security</span>
-              <span className="text-xl font-bold">Encrypted</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Right Column: Limits & Settings */}
-      <section className="md:col-span-7 lg:col-span-8 space-y-12">
+      <section className="space-y-12">
         {/* Budget Limits Section */}
         <div className="space-y-6">
           <div className="flex items-center justify-between">
@@ -174,7 +124,7 @@ export default function Settings() {
                 <div className="h-full bg-primary rounded-full transition-all duration-1000" style={{ width: `${dailyPercent}%` }}></div>
               </div>
             </div>
-            
+
             {/* Monthly Limit */}
             <div className="bg-surface-container-lowest p-6 rounded-xl shadow-sm border border-outline-variant/10">
               <div className="flex justify-between items-end mb-4">
@@ -248,14 +198,14 @@ export default function Settings() {
 
           {/* Danger Zone / Sign Out */}
           <div className="pt-8">
-            <button 
+            <button
               onClick={logout}
               className="w-full flex items-center justify-center gap-3 p-4 rounded-xl border border-error/20 text-error font-bold hover:bg-error/5 transition-colors active:scale-95 duration-150"
             >
               <span className="material-symbols-outlined" data-icon="logout">logout</span>
               Sign Out
             </button>
-            <p className="text-center text-[10px] text-on-surface-variant mt-4 font-bold uppercase tracking-widest">App Version 2.4.0 • Built for VendTrack</p>
+            <p className="text-center text-[10px] text-on-surface-variant mt-4 font-bold uppercase tracking-widest">App Version 2.4.0 • Made with ❤️ by Vijay Dhyani</p>
           </div>
         </div>
       </section>
